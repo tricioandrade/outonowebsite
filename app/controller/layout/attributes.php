@@ -20,6 +20,7 @@ class attributes extends controller
              #css
              $this->css[] = self::server.'app/view/css/style.css';
              $this->css[] = self::server.'app/view/fonts/fonts.css';
+             $this->css[] = self::server.'vendor/boxicons/css/boxicons.min.css';
              $this->css[] = self::server.'vendor/bootstrap/css/bootstrap.min.css';
              $this->css[] = self::server.'vendor/fontawesome/css/all.min.css';
              $this->css[] = self::server.'vendor/icofont/icofont.min.css';

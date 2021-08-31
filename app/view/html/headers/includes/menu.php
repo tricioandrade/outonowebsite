@@ -25,11 +25,11 @@ use app\controller\global\consts;
 
 <!-- ======= Header ======= -->
 <header id="header" class="fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg">
         <div class="container">
             <a class="navbar-brand col" href="#"><img src="<?php echo outonologo;?>" alt="" style="width: 100px;"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fa fa-toggler"></i>
             </button>
             <div class="collapse navbar-collapse col" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
@@ -37,10 +37,13 @@ use app\controller\global\consts;
                         <a class="nav-link active" aria-current="page" href="#"><i class="fa fa-home"></i>&nbsp;Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-question-circle"></i>&nbsp;Sobre</a>
+                        <a class="nav-link" href="#about"><i class="fa fa-question-circle"></i>&nbsp;Sobre</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="fa fa-phone-alt"></i>&nbsp;Contacto</a>
+                        <a class="nav-link" href="#team"><i class="fa fa-users"></i>&nbsp;Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact"><i class="fa fa-phone-alt"></i>&nbsp;Contacto</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#" tabindex="-1" aria-disabled="true"><i class="fa fa-shopping-bag"></i>&nbsp;Encomendar</a>

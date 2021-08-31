@@ -15,6 +15,7 @@ class consts extends cleaner
         define('author', 'Patrício Andrade');
         define('loginlink', self::server.'_blank/login/');
         define('outonologo', self::server.'app/view/img/icon/outonologo.png');
+        define('carouselimages',self::server.'app/view/img/carousel/');
         define('server', self::server);
     }
 }

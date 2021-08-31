@@ -1,9 +1,13 @@
 
 *.ttf
-*.txt
 *.png
-*.less
-*.scss
+*.jpg
+*.webp
 *.svg
 *.woff
 *.woff2
+*.scss
+*.md
+*.less
+*.map
+vendor/
