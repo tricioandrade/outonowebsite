@@ -1,6 +1,6 @@
 <?php
  
-use app\controller\global\consts;
+use app\controller\globals\consts;
 use app\controller\routes\app as RoutesApp;
 
 ini_set('allow_url_include', 'On');

@@ -1,5 +1,5 @@
 <?php
-namespace app\controller\global;
+namespace app\controller\globals;
 
 class consts extends cleaner
 {

@@ -10,7 +10,7 @@
  *
  */
 
-/* global jQuery */
+/* globals jQuery */
 
 (function($){
     "use strict";
