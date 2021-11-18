@@ -1,5 +1,5 @@
 <?php
-use app\controller\global\consts;
+use app\controller\globals\consts;
 use app\controller\layout\attributes;
 $attibutes = new attributes();
 ?>
