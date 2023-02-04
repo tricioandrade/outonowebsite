@@ -60,10 +60,12 @@ const CarouselSlide = () => {
 
     return (
         <>
-            <Carousel  className='mb-0'>
+            <Carousel className='mb-0'>
                 { carousel() }    
             </Carousel>
-            <Col lg={12} className='shadow-img'> <img src={ shadow } /> </Col>
+            <Col lg={12} className='shadow-img'> <img style = {{
+                width: '100%'
+            }}  src={ shadow } /> </Col>
         </>
     );
 }

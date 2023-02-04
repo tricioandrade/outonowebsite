@@ -1,3 +1,15 @@
+import React  from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
+import { Link } from "react-router-dom";
+import img from '../../assets/1.jpg';
+
+
+const Advantage = () => {
+
+
+
+
+    return (
 <section id="pub">
     <div className="container-fluid">
         <div className="row">
@@ -42,9 +54,17 @@
                     </div>
                 </div>
             </div>
-            <div className="col col-lg-6 col-md-6 col-sm-12">
-                <img src={ img }>
-            </div>
+            <div className="d-flex col col-lg-6 col-md-6 col-sm-12">
+                        <img style={{
+                        width: '100%',
+                        borderRadius: '110px',
+                        objectFit: 'cover',
+                        bottom:0
+                    }} src={ img } />
+                    </div>
         </div>
     </div>
 </section>
+    )
+}
+export default Advantage;

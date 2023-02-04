@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Form, Row } from "react-bootstrap";
-
+import img from '../../assets/2.jpg';
 
 const About = () => {
     
@@ -9,10 +9,10 @@ const About = () => {
         <section id="about">
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col col-lg-6 col-md-6 col-sm-12">
+                    <div className="col col-lg-6 col-md-6 col-sm-12 d-flex align-items-baseline">
                         <div className="about-content">
                             <h4 className="title">
-                                "O software <br>que alcança todos" 
+                                "O software <br/>que alcança todos" 
                             </h4>
                             <p>
                                 Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio nihil nesciunt aut molestiae? Ducimus eaque quo facilis sequi ullam vitae blanditiis repudiandae, qui in, deleniti commodi neque provident rem asperiores!
@@ -57,8 +57,13 @@ const About = () => {
                             </div> 
                         </div>
                     </div>
-                    <div className="col col-lg-6 col-md-6 col-sm-12">
-                        {/* <!-- <img src="<?php echo server?>app/view/img/about/manatcomputer.png"> --> */}
+                    <div className="d-flex col col-lg-6 col-md-6 col-sm-12">
+                        <img style={{
+                        width: '100%',
+                        borderRadius: '110px',
+                        objectFit: 'cover',
+                        bottom:0
+                    }} src={ img } />
                     </div>
                 </div>
             </div>
