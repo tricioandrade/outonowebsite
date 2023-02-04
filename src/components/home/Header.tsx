@@ -4,80 +4,59 @@ import { Link } from 'react-router-dom';
 
 
 const Header = () => {
-
-    const menu = [ 'Particulares', 'Empresas', 'Microcrédito', 'O Banco Sol'];
-    const menuDropped1 = [ 
-        {
-            text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Sol Seguros'],
-            link: [],
-            icon: 'fa-user-circle',
-        },
-        {
-            text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Solnet', 'Sol Seguros'],
-            link: [],
-            icon: 'fa-building',
-        },
-        {
-            text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Solnet', 'Sol Seguros'],
-            link: [],
-            icon: 'fa-money-bill',
-        },
-        {
-            text: [ 'Modelo de Abertura de Conta', 'Depósitos', 'Créditos', 'Cartões', 'Serviços', 'Oper. No Estrangeiro', 'Solnet', 'Sol Seguros'],
-            link: [],
-            icon: 'fa-question-circle',
-        }
-    ];
-
-    const menuRender = () => {
-        return menu.map((title, key1) => {
-            return (
-                <>
-                    <li key={key1 + 1} className={"nav-item dropdown " + (title === 'Particulares' ?
-                        'active' : '')}>
-                        <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                           <i className={ 'fa ' +  menuDropped1[key1].icon } /> { title }  
-                        </a>
-                        <ul className="dropdown-menu">
-                            {
-                                menuDropped1.map(( textLink, key) => {
-                                    return (
-                                        <li>
-                                            <Link className='dropdown-item' key={ key + 1 } to="#action/3.1">{ 
-                                             menuDropped1[key1]?.text[key] 
-                                            }</Link>
-                                        </li>
-                                    )
-                                })
-                            }
-                        </ul>
-                    </li>
-                </>
-            )
-        })
-    }
     
     return (
-            <Navbar bg="" expand="lg" variant='light' className='d-block fixed-top navbar-menu'>
-                <Container>
-                    <Navbar.Brand href="#home"> <i className='fa fa-circle x' /> Banco Sol</Navbar.Brand>
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" />        
-                    <Navbar.Collapse id="basic-navbar-nav" className='flex-row-reverse'>
-                        <Form className="d-flex">
-                            <Form.Control
-                                type="search"
-                                placeholder="Search"
-                                className="me-2"
-                                aria-label="Search"
-                            />
-                            <Button variant="outline-success">Search</Button>
-                        </Form>
-                        <Nav className="me-4">
-                            { menuRender()}
-                        </Nav>
-                    </Navbar.Collapse>
-                </Container>
-            </Navbar>
+        <>
+            {/* <div id="topbar" className="d-none d-lg-flex align-items-center fixed-top">
+                <div className="container d-flex">
+                    <div className="col">
+                        <div className="contact-info mr-auto">
+                            <i className="icofont-envelope"/>
+                            <a href="mailto:geral@outono.ao">geral@outono.ao</a>
+                            <i className="icofont-phone"/> 
+                            <a href="tel:+244928347743">+244 928 347 743</a>
+                        </div>
+                    </div>
+                    <div className="col">
+                        <div className="social-links float-end">
+                            <a href="https://twitter.com/cpsupport" target="_blank" className="twitter"><i className="icofont-twitter"/></a>
+                            <a href="https://facebook.com/cpsupport" target="_blank" className="facebook"><i className="icofont-facebook"/></a>
+                            <a href="https://instagram.com/cpsupport" target="_blank" className="instagram"><i className="icofont-instagram"/></a>
+                            <a href="https://linkedin.com/cpsupport" target="_blank" className="linkedin"><i className="icofont-linkedin"/></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div> */}
+            <header id="header" className="fixed-top">
+                <nav className="navbar navbar-expand-lg">
+                    <div className="container">
+                        <a className="navbar-brand col" href="#"><img src="<?php echo outonologo;?>" alt="" style="width: 100px;"></a>
+                        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i className="fa fa-toggler"/>
+                        </button>
+                        <div className="collapse navbar-collapse col" id="navbarSupportedContent">
+                            <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+                                <li className="nav-item">
+                                    <a className="nav-link active" aria-current="page" href="#"><i className="fa fa-home"/>&nbsp;Home</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#about"><i className="fa fa-question-circle"/>&nbsp;Sobre</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#team"><i className="fa fa-users"/>&nbsp;Equipe</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#contact"><i className="fa fa-phone-alt"/>&nbsp;Contacto</a>
+                                </li>
+                                <li className="nav-item">
+                                    <a className="nav-link" href="#" tabindex="-1" aria-disabled="true"><i className="fa fa-shopping-bag"/>&nbsp;Encomendar</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>    
+        </>
     )
 }
 

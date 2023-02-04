@@ -1,18 +1,12 @@
 import CarouselSlide from './CarouselSlide';
-import Short from './Short';
-import ShortCards from './ShortCards';
-import News from './News';
-import ContactForm from './ContactForm';
+import About from './About';
 
 const Home = () => {
 
     return (
         <>
             <CarouselSlide />
-            <ShortCards/>
-            <Short/>
-            <News/>
-            <ContactForm/>
+            <About/>
         </>
     );
 }
