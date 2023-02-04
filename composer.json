@@ -1,26 +1,19 @@
 {
-    "name": "tricioandrade/outono",
-    "description": "Software de Faturação",
-    "minimum-stability": "stable",
-    "license": "proprietary",
-    "authors": [
-      {
-        "name": "Patricio Bento Andrade",
-        "email": "tricioandrade@outlook.com",
-        "role":  "Developer",
-        "homepage": "https://github.com/tricioandrade/outono"
-      }
-    ],
-    "config": {
-      "vendor-dir": "vendor"
-    },
+    "name": "tricioandrade/outonowebsite",
+    "description": "website",
+    "type": "project",
+    "license": "MIT",
     "autoload": {
-      "psr-4": {
-        "app\\": "app/"
-      }
+        "psr-4": {
+            "Tricioandrade\\Outonowebsite\\": "src/"
+        }
     },
-    "require": {
-      "ext-pdo": "*",
-        "league/commonmark": "^2.0"
-    }
-  }
+    "authors": [
+        {
+            "name": "Patrício Andrade",
+            "email": "tricioandrade@outlook.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
