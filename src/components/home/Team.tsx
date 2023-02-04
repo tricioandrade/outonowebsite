@@ -1,12 +1,10 @@
 import React  from "react";
 import { Card, Col, Container, Row } from "react-bootstrap";
+import img from '../../assets/1.jpg';
 import { Link } from "react-router-dom";
 
 
 const Team = () => {
-
-
-
 
     return (
         <section id="team">
